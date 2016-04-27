@@ -2,7 +2,7 @@
 
 return array (
     'host'=>'localhost',
-    'dbname'=>'diplom',
+    'dbname'=>'university',
     'user'=>'root',
     'password'=>''    
 );

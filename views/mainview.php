@@ -7,24 +7,24 @@
     </ol>
     <div class="carousel carousel-inner">
         <div class="item active">
-            <img src="/bootstrap/images/7gD60UdAWnU.jpg" alt="">
+            <img src="/bootstrap/images/1.jpg" alt="">
             <div class="carousel-caption">
-                <h3>First slide</h3>
-                <p>Description</p>
+
+                <p class="slad">Спартакиада среди общежитий</p>
             </div>
         </div>
         <div class="item">
-            <img src="/bootstrap/images/k2KLBXwrHeo.jpg" alt="">
+            <img src="/bootstrap/images/2.jpg" alt="">
             <div class="carousel-caption">
-                <h3>Second slide</h3>
-                <p>Description</p>
+
+                <p class="slad">Спартакиада среди общежитий</p>
             </div>
         </div>
         <div class="item">
-            <img src="/bootstrap/images/EGbPV37qMiQ.jpg" alt="">
+            <img src="/bootstrap/images/3.jpg" alt="">
             <div class="carousel-caption">
-                <h3>Third slide</h3>
-                <p>Description</p>
+
+                <p class="slad">Спартакиада среди общежитий</p>
             </div>
         </div>
     </div>

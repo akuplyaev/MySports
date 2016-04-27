@@ -20,10 +20,10 @@ class Router
       
       $uri=$this->getURI();
       foreach ($this->routes as $uriPattern=>$path) {
-          
+
           if(preg_match("~$uriPattern~",$uri)){
+
               $segments =  explode('/', $path);
-             
               $controllerName=  array_shift($segments).'Controller';
               $controllerName=  ucfirst($controllerName);
               $actionName='action'.ucfirst(array_shift($segments));
@@ -32,17 +32,26 @@ class Router
                   include_once ($controllerFile);
               }
 
-              
+
+             if(!is_callable(array($controllerName, $actionName))){
+
+              return;
+             }
               $controllerObject=new $controllerName;
               $result=$controllerObject->$actionName();
               if($result!=null){
                   break;
               }
-
-             
           }
+
           
       }
     }
+    static  function ErrorPage404()
+    {
+        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+        header('Location:'.$host.'404');
+    }
 
 }
+

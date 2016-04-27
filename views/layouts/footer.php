@@ -1,5 +1,5 @@
 
-<footer  >
+<footer  class="navbar-inverse">
 
            <p >MyCompany 2016</p>
 

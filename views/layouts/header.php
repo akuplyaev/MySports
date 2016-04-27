@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/main.css">
     <script src="/bootstrap/js/jquery-1.11.3.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
@@ -38,23 +39,27 @@
               </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="main">Главная</a></li>
+                    <li><a href="/main">Главная</a></li>
+                    <li><a href="/main/teachers">Преподаватели</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Кафедра <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="main/chair">О кафедре</a></li>
+                            <li><a href="/main/chair">О кафедре</a></li>
                             <li><a href="?act=baskeetball">Спортивные объекты</a></li>
                             <li><a href="?act=ping_pong">Спортакиада РГУ</a></li>
-                            <li><a href="?act=ping_pong">Контакты</a></li>
+                            <li><a href="/contacts">Контакты</a></li>
                         </ul>
                     </li>
-                    <li><a href="teachers">Преподаватели</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Фубол</a></li>
-                            <li><a href="#">Баскетбол</a></li>
-                            <li><a href="#">Настольный теннис</a></li>
+                            <?php
+                            require ROOT.'/model/Section.php';
+                            $categoryList=Section::getSectionList();
+                            foreach ($categoryList as $row){
+                                echo '<li><a href="#">'.$row['sec_name'].'</a></li>';
+                            }
+                            ?>
                         </ul>
                     </li>
                 </ul>
