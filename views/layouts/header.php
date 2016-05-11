@@ -63,16 +63,15 @@
                         </ul>
                     </li>
                 </ul>
-                <form action class="navbar-form navbar-right">
+                <form action="admin/login" class="navbar-form navbar-right" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Login" value="">
+                        <input type="text" class="form-control" name="Login" placeholder="Login" value="" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Password" value="">
+                        <input type="text" class="form-control" name="Password" placeholder="Password" value="" required>
                     </div>
                     <button type="submit" class="btn btn-primary" >
                         <span class="glyphicon glyphicon-log-in"></span>
-                        
                         <i>Войти</i>
                     </button>
                 </form>

@@ -1,6 +1,7 @@
 <?php
 
 return array(
+    'admin/login'=>'admin/login',
     'main/chair'=>'main/chair',
     'chair'=>'main/chair',
     'prep/([-_a-z0-9]+)'=>'main/prep/$1',
