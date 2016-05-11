@@ -19,5 +19,11 @@ class MainController
         require_once(ROOT . '/views/chairview.php');
         return true;
     }
+    public function actionPrep($parametrs) {
+        require_once ROOT.'/model/Teachers.php';
+        $teacherInfo=Teachers::getTeacherInfo($parametrs);
+        require_once(ROOT . '/views/prepview.php');
+        return true;
+    }
 
 }

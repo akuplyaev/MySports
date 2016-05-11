@@ -8,3 +8,29 @@
    font-size: xx-large;
    font-family: cursive;
 }
+.img-container {
+    background: url("/bootstrap/images/DSC_0004.JPG");
+   height: 450px;
+    max-width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+footer{
+    margin-top: 20px;
+}
+.teacherPhoto
+{
+    max-width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.photo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
